@@ -109,6 +109,10 @@ li a {
 .nav-active {
     transform: translateX(0%);
 }
+
+.nav-links li a:hover {
+    color: darkblue;
+}
 section {
     font-size: 30px;
     box-sizing: content-box;
