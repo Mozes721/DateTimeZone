@@ -42,7 +42,6 @@ weekday[6] = "Saturday";
 var today = new Date();
 var day = weekday[today.getDay()];
 var today_date = month[today.getMonth()] + ' ' + today.getDate() +  ' ' + today.getFullYear(); 
-<<<<<<< HEAD
 
 // document.getElementById("time-zone").innerHTML = "Time in: UTC"; 
 // document.getElementById("time").innerHTML = '00:00:00';
@@ -129,7 +128,7 @@ function gettime(value_change) {
         if (value_change) {
             value = value_change;
         }
-=======
+
 document.getElementById("time-zone").innerHTML = "Local Time";
 var utc_time_click = document.getElementById("UTC").addEventListener("click", gettime);
 var cet_time_click = document.getElementById("CET").addEventListener("click", gettime);
@@ -222,7 +221,7 @@ function gettime(value_change) {
         if (value_change) {
             value = value_change;
         }
->>>>>>> f90ad107704ade9e7cad774ebedc3f88f1c48e12
+    
         else {
             value = -1;
         }
@@ -250,13 +249,10 @@ function gettime(value_change) {
 function StopLocalClock() {
     clearInterval(timeInterval);
 }
-<<<<<<< HEAD
 
 function StartLocalClock() {
     timeInterval = setInterval(utc_time, 1000);
 }
-=======
->>>>>>> f90ad107704ade9e7cad774ebedc3f88f1c48e12
 
 function StartLocalClock() {
     timeInterval = setInterval(localtime, 1000);
