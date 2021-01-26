@@ -36,6 +36,10 @@ nav {
     text-align: right;
 } 
 
+.nav-links li a:hover {
+    color: darkblue;
+}
+
 ul {
     text-align: right;
 }
