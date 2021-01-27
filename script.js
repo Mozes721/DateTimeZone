@@ -49,7 +49,7 @@ var today_date = month[today.getMonth()] + ' ' + today.getDate() +  ' ' + today.
 
 navElements.forEach(function (element, index){
     element.addEventListener('click', function(e) {
-        // e.preventDefault();
+        e.preventDefault();
         let value_change;
         switch (index) 
         {
